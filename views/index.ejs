@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Pet list</h3>
+    <ul>
+      <% for(var i = 0; i<pets.length; i++){ %>
+        <li><%=pets[i]%></li>
+      <%}%>
+    </ul>
+
+    <h3>Enter a pet</h3>
+    <form action="/pets" method="post">
+      <input type="text" name="name" >
+      <input type="submit">
+    </form>
+  </body>
+</html>
